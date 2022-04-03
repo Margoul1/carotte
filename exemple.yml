@@ -17,9 +17,9 @@ Layout
 	use default
 		
 Buttons
-	*bunnyButton
-		name:Make a carotte
-		desc:Click this little carotte to get more bunnies!
+	*carotteButton
+		name:fais une carotte
+		desc:Cliques pour planter une carotte !
 		on click:anim icon wobble
 		on click:yield 1 carotte
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
@@ -31,10 +31,10 @@ Buttons
 		tooltip class:red
   
   *tomateButton
-    name:Plante une tomate.
+    name:fais une tomate.
 		desc:Cliques pour farmer des tomates !
 		on click:anim icon wobble
-		on click:tomate
+		on click:yield 1 tomate
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
 		icon:icons[1,2]
 		no text
