@@ -1,7 +1,7 @@
 Let's make a game!
 	name:La légende des ROOS !
 	by:Margou
-	desc:Développe l'exploitation familiale des ROOS ! Crée un royaume tout puissant ! Débloque Matthias et ses amis !<//>Make bunnies and shoot for the stars!
+	desc:Développe l'exploitation familiale des ROOS ! Crée un royaume tout puissant ! Débloque Matthias et ses amis !<//>H17 règnera !
 	created:03/04/2022
 	updated:pas le temps tavuuu
 	version:6.6.7
@@ -29,6 +29,20 @@ Buttons
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:orange
+  
+  *tomateButton
+    name:Plante une tomate.
+		desc:Cliques pour farmer des tomates !
+		on click:anim icon wobble
+		on click:tomate
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		icon:icons[1,2]
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+  
 		
 Resources
 	*carotte|carottes
