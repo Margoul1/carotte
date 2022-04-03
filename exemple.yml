@@ -29,6 +29,19 @@ Buttons
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
+  
+  *tomateButton
+    name:Plante une tomate.
+		desc:Cliques pour farmer des tomates !
+		on click:anim icon wobble
+		on click:tomate
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		icon:icons[1,2]
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
 		
 Resources
 	*carotte|bunnies
