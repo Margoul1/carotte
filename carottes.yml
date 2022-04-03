@@ -18,10 +18,10 @@ Layout
 		
 Buttons
 	*carotteButton
-		name:Plante une carotte.
+		name:carotte.
 		desc:Cliques pour farmer des carottes !
 		on click:anim icon wobble
-		on click:carotte
+		on click:yield 1 carotte
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
 		icon:icons[1,1]
 		no text
@@ -31,7 +31,7 @@ Buttons
 		tooltip class:orange
   
   *tomateButton
-    name:Plante une tomate.
+    name:tomate.
 		desc:Cliques pour farmer des tomates !
 		on click:anim icon wobble
 		on click:tomate
