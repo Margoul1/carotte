@@ -103,9 +103,9 @@ Buildings
 	        name:magasin|magasins
 		desc:Un magasin pour vendre vos produits!<//><b>Effect:</b><.>Echange vos légumes contre de l'argent.
 		icon:icons[0,0]
-		cost:100 carrots
+		cost:2 carrots
+		cost increase:100%
 		on click:yield 0.1 goldenCoin
-		on click:yield -1 carrot
 		req:50 carrots:earned
 	*hutch|hutches
 		name:clapier|clapiers
