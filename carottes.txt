@@ -18,8 +18,8 @@ Layout
 		
 Buttons
 	*carrotButton
-		name:Make a carrot
-		desc:Click this little carrot to get more carrots!
+		name:Carottes
+		desc:Cliques pour produire des carottes ! 
 		on click:anim icon wobble
 		on click:yield 1 carrot
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
@@ -29,6 +29,20 @@ Buttons
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
+		
+	*eggplantButton
+	        name:Aubergines
+		desc:Cliques pour produire des aubergines !
+		on click:anim icon wobble
+		on click:yield 1 eggplant
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenEggplant
+		icon:stuff/bunny.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
 		
 Resources
 	*carrot|carrots
@@ -51,9 +65,16 @@ Resources
 		class:noBackground
 		hidden when 0
 	
-	*aubergine|aubergines
+	*eggplant|eggplants
 	        name:aubergine|aubergines
 		desc:une aubergine juteuse, mais que seul JR apprécie.
+		show earned
+		
+	*goldenEggplant|goldenEggplants
+	        name:golden aubergine|golden aubergines
+		desc:L'aubergine légendaire!
+		icon:icons[0,1]
+		class:noBackground
 		show earned
 		
 Shinies
