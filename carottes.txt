@@ -37,12 +37,12 @@ Resources
 		desc:Voici des carottes. 
 		icon:icons[0,0]
 		class:noBackground
-		show earned
+		hidden when 0
 		
 	*goldenCoin|goldenCoins
 	        name:or
 		desc:Une belle pièce dorée!
-		hidden when 0
+		show earned
 		
 	
 	*goldenCarrot|goldenCarrots
@@ -55,14 +55,14 @@ Resources
 	*eggplant|eggplants
 	        name:aubergine|aubergines
 		desc:une aubergine juteuse, mais que seul JR apprécie.
-		show earned
+		hidden when 0
 		
 	*goldenEggplant|goldenEggplants
 	        name:golden aubergine|golden aubergines
 		desc:L'aubergine légendaire!
 		icon:icons[0,1]
 		class:noBackground
-		show earned
+		hidden when 0
 		
 Shinies
 	*luckyBunny
@@ -104,7 +104,7 @@ Buildings
 		desc:Un magasin pour vendre vos produits!<//><b>Effect:</b><.>Echange vos légumes contre de l'argent.
 		icon:icons[0,0]
 		cost:30 carrots
-		on tick:yield 0.01 goldenCoin
+		on tick:yield 0.1 goldenCoin
 		on tick:yield -1 carrot
 		req:20 carrots:earned
 	*hutch|hutches
