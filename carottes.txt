@@ -91,7 +91,15 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
 		
-	*cage|cages
+	*carCage|carCages
+		name:petit potager de carottes|petits potagers de carottes
+		desc:Un petit potager de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 10 secondes.
+		icon:icons[3,0]
+		cost:15 carrots
+		on tick:yield 0.1 carrot
+		unlocked
+	
+	*eggCage|eggCages
 		name:petit potager de carottes|petits potagers de carottes
 		desc:Un petit potager de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 10 secondes.
 		icon:icons[3,0]
@@ -116,13 +124,22 @@ Buildings
 		cost increase:100%
 		on click:yield 0.1 goldenCoin
 		req:50 eggplants:earned
+	
 	*hutch|hutches
-		name:clapier|clapiers
-		desc:.<//><b>Effect:</b><.>Produces 1 rabbit every 2 seconds.
+		name:serre de carottes|serres de carottes
+		desc:Une petit serre de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 2 secondes.
 		icon:icons[3,1]
 		cost:100 carrots
 		on tick:yield 0.5 carrots
 		req:100 carrots:earned
+		
+	*hutch1|hutches1
+		name:serre d'aubergines|serres d'aubergines
+		desc:Une petite serre d'aubergines.<//><b>Effect:</b><.>Produit 1 aubergine toutes les 2 secondes.
+		icon:icons[3,1]
+		cost:100 eggplants
+		on tick:yield 0.5 eggplants
+		req:100 eggplants:earned
 	
 	*coop|coops
 		name:Rabbit coop|Rabbit coops
@@ -271,14 +288,24 @@ Upgrades
 	//building upgrades
 	
 	*buildingUpgrade1
-		name:Sippy bottles
-		desc:Your carrots can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		name:Jus de carotte
+		desc:Vos carottes boivent leurs jus !<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,0]
 		cost:1000 carrots
-		passive:multiply yield of cage by 2
+		passive:multiply yield of carCage by 2
 		passive:multiply yield of hutch by 2
 		passive:multiply yield of coop by 2
-		req:(cages>=10 or hutches>=10 or coops>=10)
+		req:(carCages>=10 or hutches>=10 or coops>=10)
+		
+	*buildingUpgrade1-2
+		name:Jus d'aubergines
+		desc:Vos aubergines boivent leur jus !<//><b>Effect:</b><.>rabbit cage production x2<.>la production des <.>rabbit coop production x2
+		icon:icons[2,0] icons[3,0]
+		cost:1000 eggplants
+		passive:multiply yield of eggCage by 2
+		passive:multiply yield of hutch by 2
+		passive:multiply yield of coop by 2
+		req:(eggCages>=10 or hutches>=10 or coops>=10)
 		
 	*buildingUpgrade2
 		name:Prime grade hay
