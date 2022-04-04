@@ -18,7 +18,7 @@ Layout
 		
 Buttons
 	*carotteButton
-		name:yield 1 carotte.
+		name:Make 1 carotte.
 		desc:Cliques pour farmer des carottes !
 		on click:anim icon wobble
 		on click:yield 1 carotte
