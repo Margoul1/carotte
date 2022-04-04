@@ -72,7 +72,7 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
 		
-	*PPDCs|PsPsDCs
+	*cage|cages
 		name:Petit potager de carottes|Petits potagers de carottes
 		desc:Un petit potager de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 10 secondes.
 		icon:icons[3,0]
