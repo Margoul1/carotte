@@ -38,8 +38,15 @@ Resources
 		class:noBackground
 		show earned
 		
+	*goldenCoin|goldenCoins
+	        name:or|pièce d'or|pièces d'or
+		desc:Une belle pièce dorée!
+		icon:icons[0,0]
+		class:noBackground
+		show earned
+	
 	*goldenCarrot|goldenCarrots
-		name:Golden carrot|Golden carrots
+	        name:Golden carrot|Golden carrots
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:icons[0,1]
 		class:noBackground
@@ -73,16 +80,24 @@ Buildings
 		on click:anim glow
 		
 	*cage|cages
-		name:Petit potager de carottes|Petits potagers de carottes
+		name:petit potager de carottes|petits potagers de carottes
 		desc:Un petit potager de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 10 secondes.
 		icon:icons[3,0]
 		cost:15 carrots
 		on tick:yield 0.1 carrot
 		unlocked
 	
+	*market|markets
+	        name:magasin|magasins
+		desc:Un magasin pour vendre vos produits!<//><b>Effect:</b><.>Echange vos légumes contre de l'argent.
+		icon:icons[0,0]
+		cost:30 carrots
+		on tick:yield 1 goldenCoin
+		on tick:yield -1 carrot
+		req:20 carrots:earned
 	*hutch|hutches
-		name:Rabbit hutch|Rabbit hutches
-		desc:A bit roomier than a cage, with enough space to hop around.<//><b>Effect:</b><.>Produces 1 rabbit every 2 seconds.
+		name:clapier|clapiers
+		desc:.<//><b>Effect:</b><.>Produces 1 rabbit every 2 seconds.
 		icon:icons[3,1]
 		cost:100 carrots
 		on tick:yield 0.5 carrots
