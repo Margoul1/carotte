@@ -72,9 +72,9 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
 		
-	*cage|cages
-		name:Rabbit cage|Rabbit cages
-		desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
+	*PPDCs|PsPsDCs
+		name:Petit potager de carottes|Petits potagers de carottes
+		desc:Un petit potager de carottes.<//><b>Effect:</b><.>Produit 1 carotte toutes les 10 secondes.
 		icon:icons[3,0]
 		cost:15 carrots
 		on tick:yield 0.1 carrot
