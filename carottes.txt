@@ -1,82 +1,47 @@
 Let's make a game!
-	name:La légende des ROOS !
-	by:Margou
-	desc:Développe l'exploitation familiale des ROOS ! Crée un royaume tout puissant ! Débloque Matthias et ses amis !<//>Règne !
-	created:03/04/2022
-	updated:pas le temps tavuuu
-	version:6.6.7
+	name:Bunny Clicker
+	by:Orteil
+	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
+	created:25/7/2017
+	updated:24/10/2017
+	version:1
 
 Settings
-	background:https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.depositphotos.com%2Fstock-photos%2Fferme.html&psig=AOvVaw3nui469InxEvX2pu82LlG9&ust=1649062712991000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCEx7vD9_YCFQAAAAAdAAAAABAD.jpg
+	background:stuff/meadow.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, spritesheet.png
+	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
 
 Layout
 	use default
 		
 Buttons
-	*carotteButton
-		name:Make 1 carotte.
-		desc:Cliques pour farmer des carottes !
+	*bunnyButton
+		name:Make a bunny
+		desc:Click this little bunny to get more bunnies!
 		on click:anim icon wobble
-		on click:yield 1 carotte
+		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-		icon:icons[1,1]
+		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
 		tooltip origin:bottom
-		tooltip class:orange
+		tooltip class:red
 		
 Resources
-	*carotte|carottes
-	    name:carotte|carottes
-		desc:Voici des carottes.
+	*bunny|bunnies
+		name:Bunny|Bunnies
+		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
-	*tomate|tomates
-	    name:tomate|tomates
-		desc:Voici des tomates.
-		icon:icons[3,1]
-		class:noBackground
-		show earned
-		
-	*aubergine|aubergines
-	    name:aubergine|aubergines
-		desc:Voici des aubergines.
-		icon:icons[7,1]
-		class:noBackground
-		show earned
-		
-	*navet|navets
-	    name:navet|navets
-		desc:Le navet :Voici des navets.
-		icon:icons[5,1]
-		class:noBackground
-		show earned
-		
-	*patate|patates
-	    name:patate|patates
-		desc:Hmmm les bonnes pommes de terres !
-		icon:icons[9,1]
-		class:noBackground
-		show earned
-		
-	*stephenHawking
-	    name:stephen hawking|Stephen Hawking
-		desc:Bah quoi c'est un légume nan ?
-		icon:icons[11,1]
-		class:noBackground
-		show earned
-	
-	*goldenCarotte|goldenCarottes
+	*goldenCarrot|goldenCarrots
 		name:Golden carrot|Golden carrots
-		desc:LA CAROTTE LEGENDAIRE!!
-		icon:icons[2,1]
+		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
+		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
 		
@@ -107,11 +72,11 @@ Buildings
 	*TEMPLATE
 		on click:anim glow
 		
-	*pttPtgDeCarottes|ptsPtgDeCarottes
-		name:petit potager|petits potagers
-		desc:Le petit potager familial, qui produit des carottes.<//><b>Effect:</b><.>Produit 5 carottes par minutes.
+	*cage|cages
+		name:Rabbit cage|Rabbit cages
+		desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
 		icon:icons[3,0]
-		cost:10
+		cost:15 bunnies
 		on tick:yield 0.1 bunny
 		unlocked
 	
