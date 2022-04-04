@@ -54,12 +54,12 @@ Resources
 	
 	*eggplant|eggplants
 	        name:aubergine|aubergines
-		desc:une aubergine juteuse, mais que seul JR apprécie.
+		desc:Une aubergine juteuse, mais que seul JR apprécie.
 		hidden when 0
 		
 	*goldenEggplant|goldenEggplants
 	        name:golden aubergine|golden aubergines
-		desc:L'aubergine légendaire!
+		desc:Une aubergine légendaire!
 		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
