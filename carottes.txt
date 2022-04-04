@@ -17,7 +17,7 @@ Layout
 	use default
 		
 Buttons
-	*bunnyButton
+	*carrotButton
 		name:Make a carrot
 		desc:Click this little carrot to get more carrots!
 		on click:anim icon wobble
@@ -231,15 +231,6 @@ Upgrades
 		passive:multiply carrot yield of bunnyButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:500000 carrots:earned
-		
-	*carrot
-		name:Carrot
-		desc:The quintessential rabbit food! Crunchy, orange, and perfect.<//><b>Effect:</b><.>carrots/click x2<.>carrot production +10%
-		icon:icons[1,0]
-		cost:100000000 carrots
-		passive:multiply carrot yield of bunnyButton by 2
-		passive:multiply yield of carrots by 1.1
-		req:1000000 carrots:earned
 	
 	//building upgrades
 	
