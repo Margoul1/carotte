@@ -1,5 +1,5 @@
 Let's make a game!
-	name:Le Domaine
+	name:Le Domaine de Matthias
 	by:margou
 	desc:Développe le domaine de Matthias!<//>Plante des légumes!
 	created:04/04/2022
@@ -32,25 +32,29 @@ Buttons
 		
 Resources
 	*carrot|carrots
-		name:carrot|carrots
-		desc:These are your carrots. You can use them to purchase things. Your goal is to have as many carrots as possible!
+		name:carotte|carottes
+		desc:Voici des carottes. 
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
 	*goldenCoin|goldenCoins
-	        name:or|pièce d'or|pièces d'or
+	        name:or
 		desc:Une belle pièce dorée!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 	
 	*goldenCarrot|goldenCarrots
-	        name:Golden carrot|Golden carrots
-		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
+	        name:Golden carotte|Golden carottes
+		desc:Une carotte légendaire!
 		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
+	
+	*aubergine|aubergines
+	        name:aubergine|aubergines
+		desc:une auergine
 		
 Shinies
 	*luckyBunny
@@ -92,7 +96,7 @@ Buildings
 		desc:Un magasin pour vendre vos produits!<//><b>Effect:</b><.>Echange vos légumes contre de l'argent.
 		icon:icons[0,0]
 		cost:30 carrots
-		on tick:yield 1 goldenCoin
+		on tick:yield 0.01 goldenCoin
 		on tick:yield -1 carrot
 		req:20 carrots:earned
 	*hutch|hutches
