@@ -99,14 +99,23 @@ Buildings
 		on tick:yield 0.1 carrot
 		unlocked
 	
-	*market|markets
-	        name:magasin|magasins
-		desc:Un magasin pour vendre vos produits!<//><b>Effect:</b><.>Echange vos légumes contre de l'argent.
+	*carMarket|carMarkets
+	        name:magasin de carottes|magasins de carottes
+		desc:Un magasin pour vendre vos carottes!<//><b>Effect:</b><.>Echange vos carottes contre de l'argent.
 		icon:icons[0,0]
 		cost:2 carrots
 		cost increase:100%
 		on click:yield 0.1 goldenCoin
 		req:50 carrots:earned
+		
+	*eggMarket|eggMarkets
+	        name:magasin d'aubergines|magasins d'aubergines
+		desc:Un magasin pour vendre vos aubergines!<//><b>Effect:</b><.>Echange vos aubergines contre de l'argent.
+		icon:icons[0,0]
+		cost:2 eggplants
+		cost increase:100%
+		on click:yield 0.1 goldenCoin
+		req:50 eggplants:earned
 	*hutch|hutches
 		name:clapier|clapiers
 		desc:.<//><b>Effect:</b><.>Produces 1 rabbit every 2 seconds.
