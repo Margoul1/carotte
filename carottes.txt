@@ -159,7 +159,7 @@ Upgrades
 		desc:A nice little supplement to your carrots' diet.<//><b>Effect:</b><.>+1 carrot/click
 		icon:icons[1,1]
 		cost:100 carrots
-		passive:increase carrot yield of bunnyButton by 1
+		passive:increase carrot yield of carrotButton by 1
 		req:10 carrots:earned
 		
 	*spinach
