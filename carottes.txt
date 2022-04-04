@@ -369,17 +369,17 @@ Achievements
 	*clickAchiev1
 		name:That tickles
 		desc:Click the carrot <b>10</b> times.
-		req:10 bunnyButton clicks
+		req:10 carrotButton clicks
 		icon:icons[2,2] icons[0,2] icons[0,6]
 	*clickAchiev2
 		name:Don't squeeze me I'll fart
 		desc:Click the carrot <b>100</b> times.
-		req:100 bunnyButton clicks
+		req:100 carrotButton clicks
 		icon:icons[2,2] icons[0,3] icons[0,6]
 	*clickAchiev3
 		name:You're cruising for a bruising, dude
 		desc:Click the carrot <b>2000</b> times.
-		req:2000 bunnyButton clicks
+		req:2000 carrotButton clicks
 		icon:icons[2,2] icons[0,4] icons[0,6]
 		
 	*bunnyPsAchiev1
