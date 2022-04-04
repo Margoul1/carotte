@@ -41,9 +41,8 @@ Resources
 	*goldenCoin|goldenCoins
 	        name:or
 		desc:Une belle pièce dorée!
-		icon:icons[0,0]
-		class:noBackground
-		show earned
+		hidden when 0
+		
 	
 	*goldenCarrot|goldenCarrots
 	        name:Golden carotte|Golden carottes
@@ -54,7 +53,8 @@ Resources
 	
 	*aubergine|aubergines
 	        name:aubergine|aubergines
-		desc:une auergine
+		desc:une aubergine juteuse, mais que seul JR apprécie.
+		show earned
 		
 Shinies
 	*luckyBunny
