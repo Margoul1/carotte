@@ -287,7 +287,7 @@ Upgrades
 	
 	//building upgrades
 	
-	*buildingUpgrade1
+	*buildingUpgrade1car
 		name:Jus de carotte
 		desc:Vos carottes boivent leurs jus !<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
 		icon:icons[2,0] icons[3,0]
@@ -297,7 +297,7 @@ Upgrades
 		passive:multiply yield of coop by 2
 		req:(carCages>=10 or hutches>=10 or coops>=10)
 		
-	*buildingUpgrade1-2
+	*buildingUpgrade1egg
 		name:Jus d'aubergines
 		desc:Vos aubergines boivent leur jus !<//><b>Effect:</b><.>rabbit cage production x2<.>la production des <.>rabbit coop production x2
 		icon:icons[2,0] icons[3,0]
