@@ -33,28 +33,28 @@ Buttons
 Resources
 	*carotte|carottes
 	    name:carotte|carottes
-		desc:Voici des carottes. A ne pas insérer dans un cul !
+		desc:Voici des carottes.
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
 	*tomate|tomates
 	    name:tomate|tomates
-		desc:Voici des tomates. Attention à ne pas tout manger !
+		desc:Voici des tomates.
 		icon:icons[3,1]
 		class:noBackground
 		show earned
 		
 	*aubergine|aubergines
 	    name:aubergine|aubergines
-		desc:Voici des aubergines. Pas d'esprits mal placés hein.
+		desc:Voici des aubergines.
 		icon:icons[7,1]
 		class:noBackground
 		show earned
 		
 	*navet|navets
 	    name:navet|navets
-		desc:Le navet : personne n'aime, sauf JR!
+		desc:Le navet :Voici des navets.
 		icon:icons[5,1]
 		class:noBackground
 		show earned
