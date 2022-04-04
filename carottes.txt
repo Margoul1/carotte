@@ -167,7 +167,7 @@ Upgrades
 		desc:Big tasty leaves, perfect for hungry carrots.<//><b>Effect:</b><.>+1 carrot/click
 		icon:icons[1,2]
 		cost:200 carrots
-		passive:increase carrot yield of bunnyButton by 1
+		passive:increase carrot yield of carrotButton by 1
 		req:50 carrots:earned
 		
 	*lettuce
@@ -175,7 +175,7 @@ Upgrades
 		desc:Frilly greens loved by all carrots.<//><b>Effect:</b><.>+1 carrot/click
 		icon:icons[1,3]
 		cost:400 carrots
-		passive:increase carrot yield of bunnyButton by 1
+		passive:increase carrot yield of carrotButton by 1
 		req:200 carrots:earned
 		
 	*broccoli
@@ -183,7 +183,7 @@ Upgrades
 		desc:Crunchy greens that look like little trees.<//><b>Effect:</b><.>carrots/click x2<.>carrot production +5%
 		icon:icons[1,4]
 		cost:3000 carrots
-		passive:multiply carrot yield of bunnyButton by 2
+		passive:multiply carrot yield of carrotButton by 2
 		passive:multiply yield of carrots by 1.05
 		req:1000 carrots:earned
 		
@@ -192,7 +192,7 @@ Upgrades
 		desc:Nice pieces of juicy red apples.<//><b>Effect:</b><.>carrots/click x1.5<.>carrot production +5%
 		icon:icons[1,5]
 		cost:10000 carrots
-		passive:multiply carrot yield of bunnyButton by 1.5
+		passive:multiply carrot yield of carrotButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:1000 carrots:earned
 		
@@ -201,7 +201,7 @@ Upgrades
 		desc:Purple, crunchy, and strangely spicy.<//><b>Effect:</b><.>carrots/click x1.5<.>carrot production +5%
 		icon:icons[1,6]
 		cost:50000 carrots
-		passive:multiply carrot yield of bunnyButton by 1.5
+		passive:multiply carrot yield of carrotButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:10000 carrots:earned
 		
@@ -210,7 +210,7 @@ Upgrades
 		desc:Tasty, and gives your carrots a lovely breath.<//><b>Effect:</b><.>carrots/click x1.5<.>carrot production +5%
 		icon:icons[1,7]
 		cost:100000 carrots
-		passive:multiply carrot yield of bunnyButton by 1.5
+		passive:multiply carrot yield of carrotButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:50000 carrots:earned
 		
@@ -219,7 +219,7 @@ Upgrades
 		desc:Broad leaves that make for a tasty salad.<//><b>Effect:</b><.>carrots/click x1.5<.>carrot production +5%
 		icon:icons[1,8]
 		cost:500000 carrots
-		passive:multiply carrot yield of bunnyButton by 1.5
+		passive:multiply carrot yield of carrotButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:100000 carrots:earned
 		
@@ -228,7 +228,7 @@ Upgrades
 		desc:Your carrots look like little vampires when they start munching on these!<//><b>Effect:</b><.>carrots/click x1.5<.>carrot production +5%
 		icon:icons[1,9]
 		cost:1000000 carrots
-		passive:multiply carrot yield of bunnyButton by 1.5
+		passive:multiply carrot yield of carrotButton by 1.5
 		passive:multiply yield of carrots by 1.05
 		req:500000 carrots:earned
 	
